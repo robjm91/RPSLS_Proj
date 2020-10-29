@@ -4,8 +4,12 @@
 // NeedObject Player 2
 class Game {
   constructor() {
-  // A Game 'has' what: HERE
+    this.playerOne = new Player("Robert");
+    this.playerTwo = new Player("Computer");
+
+    this.gestureOptions = [];
   }
+  // A Game 'has' what: HERE
 }
 
 // Need Human Class Inherit to Player
