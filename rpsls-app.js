@@ -1,6 +1,14 @@
 "use strict";
 
+class Game {
+//Object Player 1
+//Object Player 2
+}
 
+class Player {
+  // Human Class Inherit to Player
+  // Computer Class Inherit to Player
+}
 
 
 
