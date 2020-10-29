@@ -1,18 +1,22 @@
 "use strict";
 
+// Need Object Player 1
+// NeedObject Player 2
 class Game {
-//Object Player 1
-//Object Player 2
+  constructor() {
+  // A Game 'has' what: HERE
+  }
 }
 
+// Need Human Class Inherit to Player
+// Need Computer Class Inherit to Player
 class Player {
-  // Human Class Inherit to Player
-  // Computer Class Inherit to Player
+  constructor() {
+    this.score = 0; //Starting score for each player object
+    this.name = name; //player name that gets passed in
+    this.choice = choice; //the players RPSLS choice
+  }
 }
-
-
-
-
 
 
 
