@@ -1,26 +1,26 @@
 "use strict";
 
-// Need Object Player 1
-// NeedObject Player 2
-class Game {
-  constructor() {
-    this.playerOne = new Player("Robert");
-    this.playerTwo = new Player("Computer");
+// // Need Object Player 1
+// // NeedObject Player 2
+// class Game {
+//   constructor() {
+//     this.playerOne = new Player("Robert");
+//     this.playerTwo = new Player("Computer");
 
-    this.gestureOptions = [];
-  }
-  // A Game 'has' what: HERE
-}
+//     this.gestureOptions = [];
+//   }
+  
+// }
 
-// Need Human Class Inherit to Player
-// Need Computer Class Inherit to Player
-class Player {
-  constructor() {
-    this.score = 0; //Starting score for each player object
-    this.name = name; //player name that gets passed in
-    this.choice = choice; //the players RPSLS choice
-  }
-}
+// // Need Human Class Inherit to Player
+// // Need Computer Class Inherit to Player
+// class Player {
+//   constructor() {
+//     this.score = 0; //Starting score for each player object
+//     this.name = name; //player name that gets passed in
+//     this.choice = choice; //the players RPSLS choice
+//   }
+// }
 
 
 
