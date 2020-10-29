@@ -1,5 +1,47 @@
 "use strict";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------BELOW IS DICEGAME EXAMPLE----------------------------------------------------------*/
 // two player game
 // display rules
 // players roll all 6 dice and add up their score
@@ -8,7 +50,6 @@
 // first to three
 
 // Player, Die, Game
-
 class Game {
   constructor() {
     this.playerOne = new Player("Mike");
