@@ -52,7 +52,37 @@ console.log(myObject)
 
 
 
+alert("Welcome to RPSLS!");
+let playerName = prompt("What is your name?");
+console.log("The rules are simple:");
+console.log("Rock Crushes Scissors, Scissors Cuts Paper, Paper Covers Rock");
+console.log("Rock Crushes Lizard, Lizard Poisons Spock, Spock Smashes Scissors");
+console.log("Scissors Decapitates Lizard, Lizard Eats Paper, Paper Disproves Spock");
+console.log("and Spock Vaporizes Rock...HAVE FUN!!! :)");
+let playerGameMode = prompt("Which Game Mode? For Player vs AI press [1], For Player vs Player press [2]");
+let playerGameModeSelect = parseInt();
 
+if(playerGameMode === "1") {
+  console.log("Player VS Computer");
+}
+else if(playerGameMode === "2") {
+  console.log("Player vs Player");
+}
+else {
+  console.log(null);
+}
+
+
+let gestureInput = prompt("Rock, Paper, Scissors, Lizard, Spock").toLowerCase();
+console.log(gestureInput);
+let gestureArray = ["rock", "paper", "scissors", "lizard", "spock"];
+
+
+
+if(gestureInput === "Rock") {
+  console.log("hell yea man");
+  
+}
 
 
 
