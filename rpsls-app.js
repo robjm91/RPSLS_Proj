@@ -5,7 +5,7 @@ class Game {
   constructor() {
     this.playerOne = new Player("Robert"); //creating Player 1 object
     this.playerTwo = new Player("Computer"); //creating Player 2 object
-    this.listOfGestures = new 
+     
 
   }
   
@@ -13,7 +13,7 @@ class Game {
 
 // Need Human Class Inherit to Player
 // Need Computer Class Inherit to Player
-class Player {
+class Player { // blueprint for creating player objects
   constructor(name) {
     this.score = 0; //Starting score for each player object
     this.name = name; //player name that gets passed in
@@ -24,18 +24,24 @@ class Player {
     console.log("Overide This Method");
   }
 }
-class Human extends Player {
+class Human extends Player { //blueprint for creating human player
   constructor(name) {
     super (name);
+    this.score = 0;
+    this.name = name;
+    this.choice = null;
     
   }
  chooseGesture () {
    let playerChoice = prompt ("Choose a Gesture!").toLowerCase();
  }
 }
-class Computer extends Player {
+class Computer extends Player { //blueprint for creating AI player
   constructor(name) {
     super (name);
+    this.score = 0;
+    this.name = name;
+    this.choice = null;
     
   }
  chooseGesture () {
@@ -50,23 +56,21 @@ console.log(myObject)
 // let game = new Game();
 // game.runGame();
 
-
+let choiceOutcomes = ["Rock Crushes Scissors", "Scissors Cuts Paper", "Paper Covers Rock", "Rock Crushes Lizard", "Lizard Poisons Spock", "Spock Smashes Scissors", "Scissors Decapitates Lizard", "Lizard Eats Paper", "Paper Disproves Spock"];
 
 alert("Welcome to RPSLS!");
 let playerName = prompt("What is your name?");
-console.log("The rules are simple:");
-console.log("Rock Crushes Scissors, Scissors Cuts Paper, Paper Covers Rock");
-console.log("Rock Crushes Lizard, Lizard Poisons Spock, Spock Smashes Scissors");
-console.log("Scissors Decapitates Lizard, Lizard Eats Paper, Paper Disproves Spock");
-console.log("and Spock Vaporizes Rock...HAVE FUN!!! :)");
+console.log("Hi " + playerName + "," + " The rules are simple:\n");
+console.log(choiceOutcomes);
+console.log("Have Fun and Enjoy :D :D :D :D :D");
 let playerGameMode = prompt("Which Game Mode? For Player vs AI press [1], For Player vs Player press [2]");
 let playerGameModeSelect = parseInt();
 
 if(playerGameMode === "1") {
-  console.log("Player VS Computer");
+  console.log("GAME MODE: Player VS Computer");
 }
 else if(playerGameMode === "2") {
-  console.log("Player vs Player");
+  console.log("GAME MODE: Player vs Player");
 }
 else {
   console.log(null);
