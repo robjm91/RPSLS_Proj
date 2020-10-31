@@ -1,11 +1,11 @@
 "use strict";
-//Everything Should be encapsulated in a class besides the let game run
-// Need Object Player 1
-// NeedObject Player 2
+//Everything Should be encapsulated in a class 
+
 class Game {
   constructor() {
     this.playerOne = new Player("Robert"); //creating Player 1 object
     this.playerTwo = new Player("Computer"); //creating Player 2 object
+    this.listOfGestures = new 
 
   }
   
@@ -18,7 +18,7 @@ class Player {
     this.score = 0; //Starting score for each player object
     this.name = name; //player name that gets passed in
     this.choice = null; //the players RPSLS choice
-    this.gestureOptions = ["rock","scissors"];//Here contains the gesture Options of the Game
+    
   }
   chooseGesture () {
     console.log("Overide This Method");
