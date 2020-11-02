@@ -3,9 +3,10 @@
 
 class Game {
   constructor() {
-    this.playerOne = new Player("Robert"); //creating Player 1 object
-    this.playerTwo = new Player("Computer"); //creating Player 2 object
+    this.playerOne = new Player(""); //creating Player 1 object
+    this.playerTwo = new Player(""); //creating Player 2 object
      
+    this.gesture = [];
 
   }
   
@@ -48,7 +49,7 @@ class Computer extends Player { //blueprint for creating AI player
    let playerChoice = prompt ("Choose a Gesture!").toLowerCase();
  }
 }
-let myObject = new Player ("Rob")
+let myObject = new Player ("Robert");
 
 console.log(myObject)
 
@@ -76,17 +77,18 @@ else {
   console.log(null);
 }
 
-
-let gestureInput = prompt("Rock, Paper, Scissors, Lizard, Spock").toLowerCase();
-console.log(gestureInput);
-let gestureArray = ["rock", "paper", "scissors", "lizard", "spock"];
-
-
-
-if(gestureInput === "Rock") {
-  console.log("hell yea man");
+function chooseGesture () {
+  var gestureInput = prompt("Choose:\n Rock, Paper, Scissors, Lizard, Spock").toLowerCase();
+  var result = gestureInput;
+  return result;
   
 }
+console.log(gestureInput);
+// console.log(gestureInput);
+// let gestureArray = ["rock", "paper", "scissors", "lizard", "spock"];
+
+
+
 
 
 
@@ -121,7 +123,8 @@ if(gestureInput === "Rock") {
 // higher total gets a point
 // first to three
 
-// Player, Die, Game
+//Player, Die, Game
+
 // class Game {
 //   constructor() {
 //     this.playerOne = new Player("Mike");
