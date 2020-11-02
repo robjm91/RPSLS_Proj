@@ -3,10 +3,12 @@
 
 class Game {
   constructor() {
-    this.playerOne = new Player(""); //creating Player 1 object
-    this.playerTwo = new Player(""); //creating Player 2 object
+    this.playerOne = new Player(); //creating Player 1 object
+    this.playerTwo = new Player(); //creating Player 2 object
      
     this.gesture = [];
+
+    
 
   }
   
@@ -49,10 +51,12 @@ class Computer extends Player { //blueprint for creating AI player
    let playerChoice = prompt ("Choose a Gesture!").toLowerCase();
  }
 }
-let myObject = new Player ("Robert");
+let myObject1 = new Player ("Player 1");
+let myObject2 = new Player ("Player 2");
 
-console.log(myObject)
 
+console.log(myObject1);
+console.log(myObject2);
 
 // let game = new Game();
 // game.runGame();
@@ -63,7 +67,7 @@ alert("Welcome to RPSLS!");
 let playerName = prompt("What is your name?");
 console.log("Hi " + playerName + "," + " The rules are simple:\n");
 console.log(choiceOutcomes);
-console.log("Have Fun and Enjoy :D :D :D :D :D");
+console.log("Have Fun and Enjoy!");
 let playerGameMode = prompt("Which Game Mode? For Player vs AI press [1], For Player vs Player press [2]");
 let playerGameModeSelect = parseInt();
 
@@ -77,15 +81,11 @@ else {
   console.log(null);
 }
 
-function chooseGesture () {
-  var gestureInput = prompt("Choose:\n Rock, Paper, Scissors, Lizard, Spock").toLowerCase();
-  var result = gestureInput;
-  return result;
-  
-}
-console.log(gestureInput);
-// console.log(gestureInput);
-// let gestureArray = ["rock", "paper", "scissors", "lizard", "spock"];
+let gestureChoiceSelection = prompt("Choose:\n Rock, Paper, Scissors, Lizard, Spock").toLowerCase();
+
+
+
+
 
 
 
