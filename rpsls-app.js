@@ -8,6 +8,11 @@ class Game {
   }
   runGame() {
     alert("Welcome to RPSLS!\nPress the 'OK' button to continue.");
+    console.log("The rules are simple:\n");
+    console.log("Rock Crushes Scissors\nScissors Cuts Paper\nPaper Covers Rock\nRock Crushes Lizard\nLizard Poisons Spock\nLizard Poisons Spock\nScissors Decapitates Lizard\nLizard Eats Paper\nPaper Disproves Spock\nand Spock Vaporizes Rock...HAVE FUN!!! :)");
+
+    let playerGameMode = prompt("Which Game Mode? For Player vs AI press [1], For Player vs Player press [2]");
+    let playerGameModeSelect = parseInt();
 
   }
 
