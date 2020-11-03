@@ -31,17 +31,18 @@ class Game {
       this.playerOne = new Human();
       this.playerTwo = new Human();
      
-
-
-
     }
 
   }
-
+  startGameplay() {}
+  
+  
+  
   runGame() {
    
     this.displayRules();
     this.createPlayers();
+    this.startGameplay();
 
     //Start gameplay
     //Both players choose gesture
@@ -117,14 +118,12 @@ class Computer extends Player {
   constructor() {
     super ();
     this.name = "AI";
+    this.
   }
-  
-
   randomNumber() {
     let randomNumber = Math.floor(Math.random() * 5);
     return randomNumber;
   }
-
  chooseGesture() {
    let computerGestureChoice = this.gestures[this.null()];//this.null temporary(TODO)
    this.choice = computerGestureChoice;
