@@ -34,7 +34,10 @@ class Game {
     }
 
   }
-  startGameplay() {}
+  startGameplay() {
+    var result;
+
+  }
   
   
   
@@ -42,6 +45,7 @@ class Game {
    
     this.displayRules();
     this.createPlayers();
+    
     this.startGameplay();
 
     //Start gameplay
@@ -88,7 +92,7 @@ class Human extends Player {
     this.name = playerName;
   }
   chooseGesture() {
-    let playerChoice = prompt ("Choose a Gesture!\n rock(1), paper(2), scissors(3), lizard(4), spock(5)");
+    let playerChoice = prompt ("Choose a Gesture!\n rock(0), paper(1), scissors(2), lizard(3), spock(4)");
     if(playerChoice < 1 || playerChoice > 5) {
       console.log("Please Choose A Valid Gesture Option" + playerChoice);
     }
@@ -116,7 +120,7 @@ console.log(playerOne);
 
 class Computer extends Player { 
   constructor() {
-    super ();
+    super();
     this.name = "AI";
     this.
   }
