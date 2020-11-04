@@ -83,13 +83,18 @@ class Game { //blueprint or 'template' of an object
       console.log("\nGame Mode: Player vs Player");
 
       this.playerOne = new Human();
+
       this.playerTwo = new Human();
      
     }
 
   }
   startGameplay() {
-  var; 
+  let counter = i;
+  while(counter < 6) {
+    console.log("The counter is at " + counter);
+    counter ++;
+  }
   //While stuff for EACH TURN: player 1 choose gesture player 2 etc.: NEXT WILL BE COMPARE TO FIND WINNER
   //methods x3 : player 1 choose G, Player 1 choose G, compare G's
 
