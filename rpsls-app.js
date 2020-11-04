@@ -58,6 +58,7 @@ class Game { //blueprint or 'template' of an object
   constructor() { //'special' type of function, and is called every time a new instance of class is created
     this.playerOne = new Player(); //'playerOne' is an object that is an instance of the 'Player' class
     this.playerTwo = new Player(); //'playerTwo' is an object that is an instance of the 'Player' class
+    this.winScore = 3;
     
   } 
 
@@ -90,54 +91,111 @@ class Game { //blueprint or 'template' of an object
 
   }
   startGameplay() {
-  let playerOneScore = [];
-  let playerOneScore = parseInt(playerOneScore); //Don't know if I need this but ¯\_(ツ)_/¯
-  let playerTwoScore = [];
-  let playerTwoScore = parseInt(playerTwoScore);
+    alert("It's Best out of three rounds!");
+   let firstPlayerScore = 0;
+   let secondPlayerScore = 0;
 
-  while(playerOneScore = ) {
-    console.log("The counter is at " + counter);
-    counter ++;
-  }
+    while(firstPlayerScore  && secondPlayerScore === 0) {
+      if(this.playerOne.choice === this.playerTwo.choice){
+        prompt('We have a tie!');   
+    }
+    else if(this.playerOne.choice ==='rock' && this.playerTwo.choice ==='paper'){
+        prompt('playerTwo won!');
+           
+    }
+    else if(this.playerOne.choice ==='rock' && this.playerTwo.choice ==='scissors'){
+      prompt('playerOne won!');
+           
+    }
+    else if(this.playerOne.choice === 'rock' && this.playerTwo.choice ==='spock'){
+      prompt('playerTwo won!');
+         
+    }
+    else if(this.playerOne.choice === 'spock' && this.playerTwo.choice ==='rock'){
+      prompt('PlayerOne win!');
+        
+    }    
+    else if(this.playerOne.choice === 'rock' && this.playerTwo.choice ==='lizard'){
+      prompt('playerOne win!');
+         
+    }
+    else if(this.playerOne.choice === 'lizard' && this.playerTwo.choice ==='rock'){
+      prompt('PlayerTwo won!');
+          
+    }
+    else if(this.playerOne.choice === 'paper' && this.playerTwo.choice ==='rock'){
+      prompt('playerOne won!');
+          
+    }
+    else if(this.playerOne.choice === 'paper' && this.playerTwo.choice ==='scissors'){
+      prompt('playerTwo won!');
+        
+    }
+    else if(this.playerOne.choice === 'paper' && this.playerTwo.choice ==='spock'){
+      prompt('playerOne won!');
+         
+    }
+    else if(this.playerOne.choice === 'spock' && this.playerTwo.choice ==='paper'){
+      prompt('playerTwo won!');
+       
+    }
+    else if(this.playerOne.choice === 'paper' && this.playerTwo.choice ==='lizard'){
+      prompt('playerTwo won!');
+          
+    }
+    else if(this.playerOne.choice === 'lizard' && this.playerTwo.choice ==='paper'){
+      prompt('playerOne win!');
+           
+    }
+    else if(this.playerOne.choice === 'scissors' && this.playerTwo.choice ==='rock'){
+      prompt('playerTwo won!');
+          
+    }
+    else if(this.playerOne.choice ==='scissors' && this.playerTwo.choice ==='paper'){
+      prompt('playerOne won!');
+          
+    }
+    else if(this.playerOne.choice ==='scissors' && this.playerTwo.choice ==='spock'){
+      prompt('PlayerTwo won!');
+          
+    }
+    else if(this.playerOne.choice ==='spock' && this.playerTwo.choice ==='scissors'){
+      prompt('PlayerOne won!');
+          
+    }
+    else if(this.playerOne.choice ==='scissors' && this.playerTwo.choice ==='lizard'){
+      prompt('playerOne won!');
+        
+    }
+    else if(this.playerOne.choice ==='spock' && this.playerTwo.choice ==='lizard'){
+      prompt('playerTwo won!');
+        
+    }
+    else if(this.playerOne.choice ==='lizard' && this.playerTwo.choice ==='spock'){
+      prompt('playerTwo won!');
+
+    }
+    
+      
+    }
+
   //While stuff for EACH TURN: player 1 choose gesture player 2 etc.: NEXT WILL BE COMPARE TO FIND WINNER
   //methods x3 : player 1 choose G, Player 1 choose G, compare G's
 
-  }
-  
-  
   
   runGame() {
-   
     this.displayRules();
     this.createPlayers();
-  
     this.startGameplay();
+
+  }
 
     //Start gameplay
     //Both players choose gesture
     //Compare gestures, determine winner
     //repeat call run game at bttm
 
-  
-
-
-  
-  }
-
-
 }
-
-
-
-
-let player = {
-  name: "steve",
-  score: 0,
-  choice: "",
-  functin: ()=>{}
-}
-
-
 
 class Player { 
   constructor() {
@@ -173,12 +231,7 @@ class Human extends Player {
     }
   }
   
-  
 }
-
-
-
-
 
 class Computer extends Player { 
   constructor() {
@@ -218,3 +271,22 @@ console.log(playerOne);
 // }
 // if(this.playerOne.choice.beats.includes(this.playerTwo.choice.name)) //returns true
 // //then...
+
+
+// let returnLoop = 0;
+
+
+// while(chosenNumberOfRounds > returnLoop) {
+  
+
+
+  
+// }
+
+
+
+
+// let playerOneScoreArray = [];
+// let playerOneScore = parseInt(playerOneScoreArray); //Don't know if I need this but ¯\_(ツ)_/¯
+// let playerTwoScoreArray = [];
+// let playerTwoScore = parseInt(playerTwoScoreArray);
