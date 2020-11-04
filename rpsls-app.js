@@ -1,11 +1,24 @@
 "use strict";
 
+/* Constructor
+-Named using PascalCasing in JS
+-Use the 'this.' keyword in constructor to declare PROPERTIES of instances of the class will have
+ i.e. Every Cat 'HAS' a name, age, sound, and is or isn't fixed. These are the PROPERTIES of the cat Class
+-Can pass values into constructor similiar to a function
+*/
+/* Methods (THE ACTIONS OF THE CLASS)
+-Functions inside the class(also called Methods). They give functionality to the object
+-Can have any number of methods in class
+-
+*/
 
-class Game {
-  constructor() {
-    this.playerOne = new Player(); 
-    this.playerTwo = new Player();
-  }
+
+class Game { //blueprint or 'template' of an object
+  constructor() { //'special' type of function, and is called every time a new instance of class is created
+    this.playerOne = new Player(); //'playerOne' is an object that is an instance of the 'Player' class
+    this.playerTwo = new Player(); //'playerTwo
+    ' is an object that is an instance of the 'Player' class
+  } //
 
   displayRules(){
     alert("Welcome to RPSLS!\nPress the 'OK' button to continue.");
