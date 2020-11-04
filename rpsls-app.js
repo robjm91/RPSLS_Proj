@@ -90,8 +90,12 @@ class Game { //blueprint or 'template' of an object
 
   }
   startGameplay() {
-  let counter = i;
-  while(counter < 6) {
+  let playerOneScore = [];
+  let playerOneScore = parseInt(playerOneScore); //Don't know if I need this but ¯\_(ツ)_/¯
+  let playerTwoScore = [];
+  let playerTwoScore = parseInt(playerTwoScore);
+
+  while(playerOneScore = ) {
     console.log("The counter is at " + counter);
     counter ++;
   }
